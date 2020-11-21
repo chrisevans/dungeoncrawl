@@ -31,7 +31,7 @@ impl Map {
                 match self.tiles[idx] {
                     TileType::Floor => {
                         ctx.set(x, y, RGB::named(YELLOW), RGB::named(BLACK), 
-                            to_cp437('.')
+                            to_cp437(' ')
                         );
                     }
                     TileType::Wall => {
